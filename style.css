@@ -1,0 +1,288 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080816;
+    color: white;
+}
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #101024;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 26px;
+    color: white;
+}
+
+.logo span,
+.heading span {
+    color: #00eaff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #00eaff;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 10%;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.welcome {
+    color: #00eaff;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #00eaff;
+    text-shadow: 0 0 15px #00eaff;
+}
+
+.hero h2 {
+    color: #b6a6ff;
+    margin-bottom: 20px;
+}
+
+.intro {
+    color: #c4c4d6;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #00eaff;
+    color: #080816;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a78bfa;
+    box-shadow: 0 0 20px #a78bfa;
+    transform: translateY(-3px);
+}
+
+/* Profile */
+
+.profile-circle {
+    width: 260px;
+    height: 260px;
+    border: 3px solid #00eaff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    font-weight: bold;
+    color: #00eaff;
+    box-shadow: 0 0 35px #00eaff;
+}
+
+/* Common Sections */
+
+.section {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.heading {
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.about > p,
+.section-description {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.9;
+    color: #c4c4d6;
+}
+
+/* Profile Details */
+
+.profile-details,
+.education-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.info-card {
+    width: 260px;
+    background: #14142c;
+    border: 1px solid #28284a;
+    border-radius: 15px;
+    padding: 30px 20px;
+    transition: 0.3s;
+}
+
+.info-card h3 {
+    color: #00eaff;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #c4c4d6;
+    line-height: 1.7;
+}
+
+/* Skills */
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.skill-card {
+    width: 220px;
+    min-height: 170px;
+    background: #14142c;
+    border: 1px solid #28284a;
+    border-radius: 15px;
+    padding: 25px 18px;
+    transition: 0.3s;
+}
+
+.skill-card span {
+    color: #a78bfa;
+    font-size: 14px;
+}
+
+.skill-card h3 {
+    color: #00eaff;
+    margin: 15px 0;
+}
+
+.skill-card p {
+    color: #c4c4d6;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Goals */
+
+.goal-card {
+    max-width: 800px;
+    margin: auto;
+    padding: 35px;
+    background: #14142c;
+    border: 1px solid #28284a;
+    border-radius: 15px;
+    color: #c4c4d6;
+    line-height: 1.9;
+}
+
+/* Contact */
+
+.contact p {
+    color: #c4c4d6;
+    margin-bottom: 25px;
+}
+
+/* Hover Effects */
+
+.info-card:hover,
+.skill-card:hover,
+.goal-card:hover {
+    transform: translateY(-8px);
+    border-color: #00eaff;
+    box-shadow: 0 0 20px #00eaff55;
+}
+
+/* Footer */
+
+footer {
+    background: #101024;
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 60px 7%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .profile-circle {
+        width: 190px;
+        height: 190px;
+        font-size: 45px;
+    }
+
+    .section {
+        padding: 65px 7%;
+    }
+}
